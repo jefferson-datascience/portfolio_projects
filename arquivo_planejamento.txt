@@ -1,0 +1,125 @@
+Estrutura do Portfólio de Projetos
+
+Boas-Vindas:
+	Objetivo: Receber o visitante da página.
+		- Saudação
+
+	Elementos:
+		- O que é essa página de portfólio de projetos?
+		- O que o visitante vai encontrar nessa página?
+
+Sobre mim:
+	- Objetivo: Quem é você?
+	- O que anda fazendo/estudando sobre Ciência de Dados.
+
+	Elementos:
+		- O que você faz atualmente de maneira profissional?
+		- Quais as oportunidades/profissões/papéis que você está buscando?
+	
+Habilidades:
+	- Objetivo: Mostrar as habilidades adquiridas em Ciência de Dados.
+		Quais as ferramentas e métodos da Ciência de Dados que você tem experiência?
+			- Linguagem de programação(Coleta, Manipular e extrair conhecimentos dos dados)
+			- Estatísticas e de Machine Learning(Métodos e Algoritmos)
+			- Visualização de dados(Pacotes e Ferramentas de visualização de dados)
+			- Engenharia de Software
+ 	
+	Elementos: 
+		- Nome das ferramentas e técnicas
+
+Experiências:
+	- Objetivo: Mostrar as experiências atuais
+	Experiência em Ciência de Dados.
+	Experiência do seu trabalho atual.
+
+Projetos de Ciências de Dados:
+	Objetivo: Mostrar os projetos de portfólio de Ciência de Dados
+	Demonstrar nossa capacidade de resolver problemas de negócio usando dados em conjunto com ferramentas e conhecimento de Ciência de Dados.
+
+	Elementos:
+	- Título do projeto
+	- Descrição da solução construída
+	- Ferramentas utilizadas
+
+Contato:
+	Objetivo: Fornecer uma forma de entrar em contato
+	LinkedIn
+	E-mail
+	
+
+ESCREVENDO O PORTFÓLIO
+
+BOAS-VINDAS: Olá! Meu nome é Jefferson. Seja bem-vindo(a) ao meu portfólio de projetos de Ciência de Dados. 
+	     Nessa página eu demonstro as minhas habilidades para resolver problemas de negócios, através de projetos, com dados públicos utilizando ferramentas e conceitos da Ciência de dados.
+	     Ao continuar a navegação pela página você também encontrará as minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo Ciência de Dados.
+	Para entrar em contato comigo, basta acessar os links no fim da página.
+
+
+SOBRE MIM: 
+
+	Meu nome é Jefferson Henrique Candido, eu sou Mestre em Matemática Pura de formação e trabalho como Vendedor interno.
+
+	Atualmente eu trabalho com a prospecção de novos clientes e fidelização de clientes novos e antigos, sendo que em cada venda temos o objetivo de trazer o máximo de lucro possível para a empresa dada as circustâncias da negociação. Além disso, trabalho com projetos pessoais de Ciências de dados para aprimorar minhas habilidades e adquirir experiências na solução de problemas de negócios e ganhar domínio sobre as ferramentas de análise de dados.
+
+	Estou buscando uma oportunidade para trabalhar profissionalmento como Cientista de Dados para gerar insights, reduzir gastos, maximizar custos e melhorar a tomada de decisão da equipe de negócios da empresa, através da construção de soluções usando dados. 
+
+	Hoje
+
+HABILIDADES: 
+	LINGUAGEM DE PROGRAMAÇÃO:
+		- Python com foco em análise de dados
+		- Webscraping com Python
+		- SQL para extração de Dados(em formação)
+		- Banco de Dados SQLite Básico
+
+	ESTATÍSTICA E MACHINE LEARNING:
+		- Estátistica Descritiva(em formação)
+	VISUALIZAÇÃO DE DADOS:
+		- Seaborn, Matplotlib, Plotly Básico
+	ENGENHARIA DE SOFTWARE:
+		- Git, Github
+		- Streamlit
+		- Cloud Heroku
+
+EXPERIÊNCIAS:
+
+	- 2 PROJETOS COMPLETOS DE CIÊNCIA DE DADOS
+		Construção de soluções de dados para problemas de negócios próximo da realidade do dia a dia das empresa, utilizando dados públicos de competições de Ciências de Dados e de página da internet, inde esses problema foram abordados desde a concepção do projeto até a publicação do algoritmo utilizando ferramentas de Cloud Computing.
+		
+	- 1 ANO E 8 MESES COMO VENDEDOR INTERNO	
+		ESTUDO E SELEÇÃO DE POTENCIAIS CLIENTES BASEADOS NA POSIÇÃO GEOGRÁFICA, LOGÍSTICA E TIPO DE NEGÓCIO SENDO. ALÉM DISSO, PARA A EMPRESA COM ÓTIMO RETORNO FINANCEIRO E MANUTENÇÃO DESSES CLIENTES PARA OS MESMOS SEREM FIDELIZADOS.
+
+	- 5 MESES COMO ESTAGIÁRIO DOCENTE
+		Correção de provas, planejamento de aulas e ministração dessas aulas, planejamento de trabalhos/pesquisas e correção. Além disso, monitoria com horários agendados.
+
+PROJETOS DE CIÊNCIAS DE DADOS:
+
+	- Construção de um Dashboard com as melhores opções de compras e venda de imóveis a partir do portfólio de uma empresa do ramo imobiliário utilizando análise exploratória de dados e estatística descritiva.
+
+	Ferramentas Utilizadas:
+
+	- Git, Github
+	- Python, Pandas, Seaborn, Numpy
+	- Jupyter Notebook, Pycharm
+	- Streamlit
+	- Heroku
+
+	- Consultoria para um E-commerce de moda masculina com o objetivo de melhorar a tomada de decisão dos CEO's sobre quais preços estipularem, materias-primas a serem adquiridas e quais modelos fabricarem para um novo produto baseado nos dados das suas duas principais concorrentes utilizando automatização de extração de dados, análise exploratória de dados e estatística descritiva.
+
+	Ferramentas utilizadas:
+
+	- Git, Github
+	- Python, Pandas, Seaborn, Numpy, Selenium, Beautiful Soup
+	- Jupyter Notebook, Pycharm
+	- Streamlit
+	- Heroku
+ 
+CONTATO:
+
+	Para entrar em contato comigo:
+	- LinkedIn
+	- E-mail
+
+	
+
+
