@@ -49,77 +49,81 @@ Contato:
 
 ESCREVENDO O PORTFÓLIO
 
-BOAS-VINDAS: Olá! Meu nome é Jefferson. Seja bem-vindo(a) ao meu portfólio de projetos de Ciência de Dados. 
-	     Nessa página eu demonstro as minhas habilidades para resolver problemas de negócios, através de projetos, com dados públicos utilizando ferramentas e conceitos da Ciência de dados.
-	     Ao continuar a navegação pela página você também encontrará as minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo Ciência de Dados.
-	Para entrar em contato comigo, basta acessar os links no fim da página.
-
+	Olá! Meu nome é Jefferson. Seja bem-vindo(a) ao meu portfólio de projetos de Ciência de Dados. Nessa página eu demonstro as minhas habilidades para resolver problemas de negócios, através de projetos, 
+	com dados públicos utilizando ferramentas e conceitos da Ciência de dados. Ao continuar a navegação pela página você também encontrará as minhas experiências profissionais e relatos e ideias  dos 
+	projetos desenvolvidos na empresa ao qual eu trabalho. 
 
 SOBRE MIM: 
 
-	Meu nome é Jefferson Henrique Candido, eu sou Mestre em Matemática Pura de formação e trabalho como Vendedor interno.
-
-	Atualmente eu trabalho com a prospecção de novos clientes e fidelização de clientes novos e antigos, sendo que em cada venda temos o objetivo de trazer o máximo de lucro possível para a empresa dada as circustâncias da negociação. Além disso, trabalho com projetos pessoais de Ciências de dados para aprimorar minhas habilidades e adquirir experiências na solução de problemas de negócios e ganhar domínio sobre as ferramentas de análise de dados.
-
-	Estou buscando uma oportunidade para trabalhar profissionalmento como Cientista de Dados para gerar insights, reduzir gastos, maximizar custos e melhorar a tomada de decisão da equipe de negócios da empresa, através da construção de soluções usando dados. 
-
-	Hoje
+	Meu nome é Jefferson Henrique Candido, eu sou Mestre em Matemática e Cientista de Dados no Tribanco. Sou responsável pela construção de modelos de Machine Learning abrangendo problemas de sistema de recomendação,
+	churn e propensão de aceitação a produtos. No meu tempo livre gosto de me dedicar ao estudos da ciência de dados e tudo que ela abrange. Extrapolando o âmbito profissional, gosto muito de me exercitar, fazer trilha 
+	de bike, fazer aulas de dança de salão e, também, curto muito jogos de tabuleiro.
 
 HABILIDADES: 
 	LINGUAGEM DE PROGRAMAÇÃO:
-		- Python com foco em análise de dados
-		- Webscraping com Python
-		- SQL para extração de Dados(em formação)
-		- Banco de Dados SQLite Básico
+	
+		- Python com foco em análise de dados.
+		- SAS intermediário.
+		- SQL Avançado/intermediário.
 
 	ESTATÍSTICA E MACHINE LEARNING:
-		- Estátistica Descritiva(em formação)
+		
+		- Estátistica descritiva.
+		- Análise de regressão,
+		- Teste A/B para validação de modelos de machine Learning.
+		- Análise fatorial.
+		- Modelos de aprendizado supervisionado.
+		- Sistemas de recomendação.
+
 	VISUALIZAÇÃO DE DADOS:
-		- Seaborn, Matplotlib, Plotly Básico
+
+		- Seaborn, Matplotlib, Plotly Básico.
+		- SAS Visual Analytics, GaioDataOs e PowerBi.
+	
 	ENGENHARIA DE SOFTWARE:
-		- Git, Github
-		- Streamlit
-		- Cloud Heroku
+		
+		- Git, Github.
 
 EXPERIÊNCIAS:
 
-	- 2 PROJETOS COMPLETOS DE CIÊNCIA DE DADOS
-		Construção de soluções de dados para problemas de negócios próximo da realidade do dia a dia das empresa, utilizando dados públicos de competições de Ciências de Dados e de página da internet, inde esses problema foram abordados desde a concepção do projeto até a publicação do algoritmo utilizando ferramentas de Cloud Computing.
+	- PROJETOS DE CIÊNCIA DE DADOS
+		
+		* Recomendação de Produtos: Desenvolvemos um sistema de recomendação voltado para clientes que já possuem ao menos um produto no banco, com foco na verticalização do relacionamento. 
+		                            Devido à complexidade do sistema bancário, selecionamos clientes sem comprometimento de crédito, buscando garantir consistência nas sugestões.
+									Para tornar as recomendações mais precisas, coletamos diversos atributos para uma comparação justa. Usamos informações cadastrais — como estado, 
+									faturamento e dívida de mercado — e dados bancários, como número de parcelamentos de empréstimos, quantidade de seguros e outras variáveis relevantes.
+									A abordagem técnica incluiu um pré-processamento personalizado, visando uma vetorização eficiente. Com isso, aplicamos dois métodos de recomendação:
+										- Filtragem colaborativa
+										- Filtragem por similaridade do cosseno
+									Após a construção do modelo, implementamos uma camada de refinamento de produtos. Por exemplo, não faz sentido recomendar empréstimos a clientes com bloqueio de proposta. 
+									Esse filtro garante uma recomendação precisa e alinhada ao perfil do cliente. O produto final inclui:
+										- Um dashboard operacional
+										- Integrações com canais digitais (app e internet banking – em implantação)
+										- Ferramentas para gerentes comerciais (também em implantação)
+
+									Ferramentas Utilizadas: SAS Viya, SAS Visual Analytics, Python e AWS S3.
+
+		* Modelo de Churn de Clientes: Historicamente, o banco compreendia o abandono de produtos específicos pelos clientes, mas não havia uma visão clara sobre a saída total do cliente do ecossistema bancário. 
+									   Para suprir essa lacuna, desenvolvemos — em parceria com outros cientistas de dados — um sistema baseado em machine learning para prever o churn no mês seguinte.
+									   Identificamos os sete indicadores mais estratégicos para o nosso contexto bancário, analisando suas tendências de alta ou queda. A partir disso, construímos sete modelos preditivos, 
+									   cuja combinação gera uma pontuação final indicando a probabilidade de churn. Na parte técnica, utilizamos o algoritmo Gradient Boosting Classifier, que alcançou resultados expressivos após refinamentos:
+											- Precisão média: 85%
+											- Recall: 88%
+											- AUC: 90%
+									   Essas previsões possibilitaram ações direcionadas para retenção de clientes. O projeto resultou em:
+
+											- Um dashboard operacional para acompanhamento dos clientes com alto risco de churn
+											- Suporte para decisão estratégica por superintendentes, gerentes regionais e comerciais
+										
+									   Ferramentas Utilizadas: SAS Viya, SAS Visual Analytics, Python e AWS S3.
+	
+
+
+
+
 		
 	- 1 ANO E 8 MESES COMO VENDEDOR INTERNO	
 		ESTUDO E SELEÇÃO DE POTENCIAIS CLIENTES BASEADOS NA POSIÇÃO GEOGRÁFICA, LOGÍSTICA E TIPO DE NEGÓCIO SENDO. ALÉM DISSO, PARA A EMPRESA COM ÓTIMO RETORNO FINANCEIRO E MANUTENÇÃO DESSES CLIENTES PARA OS MESMOS SEREM FIDELIZADOS.
 
 	- 5 MESES COMO ESTAGIÁRIO DOCENTE
 		Correção de provas, planejamento de aulas e ministração dessas aulas, planejamento de trabalhos/pesquisas e correção. Além disso, monitoria com horários agendados.
-
-PROJETOS DE CIÊNCIAS DE DADOS:
-
-	- Construção de um Dashboard com as melhores opções de compras e venda de imóveis a partir do portfólio de uma empresa do ramo imobiliário utilizando análise exploratória de dados e estatística descritiva.
-
-	Ferramentas Utilizadas:
-
-	- Git, Github
-	- Python, Pandas, Seaborn, Numpy
-	- Jupyter Notebook, Pycharm
-	- Streamlit
-	- Heroku
-
-	- Consultoria para um E-commerce de moda masculina com o objetivo de melhorar a tomada de decisão dos CEO's sobre quais preços estipularem, materias-primas a serem adquiridas e quais modelos fabricarem para um novo produto baseado nos dados das suas duas principais concorrentes utilizando automatização de extração de dados, análise exploratória de dados e estatística descritiva.
-
-	Ferramentas utilizadas:
-
-	- Git, Github
-	- Python, Pandas, Seaborn, Numpy, Selenium, Beautiful Soup
-	- Jupyter Notebook, Pycharm
-	- Streamlit
-	- Heroku
- 
-CONTATO:
-
-	Para entrar em contato comigo:
-	- LinkedIn
-	- E-mail
-
-	
-
-
