@@ -164,6 +164,62 @@
 											que motivou a aplicação de uma solução em ciência de dados, os principais resultados alcançados e o formato da entrega.
 										</p>
 
+											<!-- Conteúdo sobre modelos de churn PF-->
+											<h3 id="content">Modelos de Churn PF</h3>
+											
+												<p>
+													No contexto de pessoa física, no âmbito bancário, os três principais problemas relacionados à perda de clientes são:
+													<li>Inadimplência.</li>
+													<li>Churn voluntário, isto é, a solicitação de encerramento da conta.</li>
+													<li>Churn silencioso, ou seja, quando o cliente deixa de utilizar a conta bancária.</li>
+												</p>
+
+												<p>
+													No nosso caso, não é diferente. Assim, foi identificado um alto volume de churn nessas três frentes mencionadas. Sendo assim,
+													o nosso problema de negócio é identificar, de forma antecipada, os clientes com maior probabilidade de inadimplência ou churn voluntário.
+													Como proposta de solução, foram sugeridos e desenvolvidos dois modelos preditivos para identificar os clientes com maior probabilidade
+													de churn no próximo mês, de modo que os tomadores de decisão tenham um mês completo para atuar sobre esses clientes,
+													reduzindo a taxa de churn e aumentando a taxa de retenção.
+												</p>
+
+												<p>
+													Para o caso de inadimplência, utilizamos uma Decision Tree com as seguintes performances:
+													<li>AUC: 89%</li>
+													<li>Precisão: 82%</li>
+													<li>Recall: 85%</li>
+													<li>Curva de ganho: em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes estão 75% dos clientes identificados como risco de churn.</li>
+												</p>
+
+												<p>
+													Para o caso da evasão voluntária, utilizamos uma Regressão Logística com as seguintes performances:
+													<li>AUC: 85%</li>
+													<li>Precisão: 87%</li>
+													<li>Recall: 79%</li>
+													<li>Curva de ganho: em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes estão 81% dos clientes identificados como risco de churn.</li>
+												</p>
+
+												<p>
+													Para que as ações sejam tomadas de forma mais efetiva e ágil, propus a construção de um dashboard atualizado mensalmente de forma automatizada,
+													diretamente integrado aos modelos de churn, com filtros interativos para que o tomador de decisão possa investigar e elaborar planos de ação
+													conforme os grupos e seus respectivos níveis de risco. Além disso, construímos 5 categorias de risco para facilitar a gestão. As categorias foram definidas da seguinte forma:
+													<li>Risco Altíssimo: probabilidade acima de 80% de churn.</li>
+													<li>Risco Alto: probabilidade entre 80% e 60% de churn.</li>
+													<li>Risco Moderado: probabilidade entre 59% e 40% de churn.</li>
+													<li>Risco Baixo: probabilidade entre 39% e 20% de churn.</li>
+													<li>Risco Baixíssimo: probabilidade abaixo de 19% de churn.</li>
+												</p>
+
+												<p>
+													<b>Ferramentas utilizadas:</b> SAS Viya, SAS Visual Analytics, Python e AWS S3.
+												</p>
+
+												<p>
+													<b>Observação:</b> Este projeto ainda está em desenvolvimento. Para sua finalização, falta a construção do modelo de churn voltado ao churn silencioso.
+													Conforme o projeto avançar, atualizarei por aqui.
+												</p>
+
+
+
 											<!-- Conteúdo sobre modelos de aceitação de parcelados -->
 											<h3 id="content">Modelo de Propensão de Aceitar Parcelados</h3>
 
