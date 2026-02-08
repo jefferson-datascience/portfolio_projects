@@ -91,6 +91,7 @@
 														<ul>
 															<li>Estatística Descritiva</li>
 															<li>Análise de Regressão</li>
+															<li>Análise de Sobrevivência</li>
 															<li>Análise Fatorial para Segmentação</li>
 															<li>Aprendizado de Máquina Supervisionado e Não-Supervisionado.</li>
 															<li>Sistemas de Recomendação.</li>											
@@ -133,7 +134,7 @@
 										</header>
 
 										<!-- Conteúdo-->
-											<h3 id="content">1 ANO E 3 MESES NO TRIBANCO ATÉ O MOMENTO COMO CIENTISTA DE DADOS</h3>
+											<h3 id="content">DESDE MARÇO DE 2024 COMO CIENTISTA DE DADOS NO TRIBANCO</h3>
 												<p>
 													Construção de soluções de Estatística Avançada e Machine Learning para problemas de negócios 
 												    como Churn, Sistemas de Recomendação, modelos de propensão de compra e, além disso, apoio 
@@ -164,6 +165,83 @@
 											que motivou a aplicação de uma solução em ciência de dados, os principais resultados alcançados e o formato da entrega.
 										</p>
 
+											<!-- Conteúdos sobre o modelo de propensão à aquisição da UNICA --> 
+
+											<h3 id='content'>Modelo de Propensão Aceitação de Adquirência</h3>
+
+												<p>
+													No contexto bancário, um produto que é ponto-chave para a captação de clientes é a maquininha de cartão (adquirência). Entretanto, observando grandes players do mercado,
+													como Itaú, Santander e Mercado Livre, percebemos uma grande dificuldade em disputar espaço com eles, principalmente no quesito taxas. Assim, um dos grandes problemas 
+													de negócio da área de adquirência da nossa instituição é a prospecção de clientes por meio da maquininha com taxas competitivas. 
+													Esses grandes players, ao fornecerem a maquininha, realizam ofertas não apenas do equipamento em si, mas também de outros produtos. Isso possibilita uma negociação de taxa mais vantajosa.
+													Dito isso, e entendendo que nossa instituição também adota essa estratégia, surgiram os seguintes questionamentos:
+												</p>
+
+												<p>
+													<b>E se, em vez de oferecermos apenas a melhor taxa, pudéssemos saber a probabilidade de o cliente aceitar os produtos do pacote ofertado?</b>
+												</p>
+
+												<p>
+													Uma vez que temos essa resposta, conseguimos poupar esforços na oferta de produtos, atuando de forma direcionada nos clientes com maior interesse e oferecendo taxas mais atrativas,
+													já que temos um indicativo da probabilidade de o cliente aceitar o pacote ofertado.
+												</p>
+
+												<p>
+													Para resolver esse problema, construímos quatro modelos de classificação para identificar a probabilidade de os clientes aceitarem os produtos desse pacote de oferta. São eles:
+													<li>Pagamentos</li>
+													<li>Parcelados</li>
+													<li>Domicílios</li>
+													<li>Maquininha de Cartão / Adquirência</li>
+												</p>
+											
+												<p>Nossos modelos obtiveram performance razoáveis dada a dificuldade. Infelizmente, nossa volumetria de dados era bem baixa e, com isso, foi preciso utilizar
+												   estratégias de apenas treino e teste para avaliação da performance e também, modelos que pudessem aprender, de forma razoável o padrão dos dados sem overfitar.
+												   Sendo assim, segue abaixo as métricas de avaliação do modelo:</p>
+																								
+												<p>
+													Para o modelo de Pagamentos obtivemos:
+													<li>AUC: 87.5%</li>
+													<li>Precisão: 80.5%</li>
+													<li>Recall: 81.0%</li>
+													<li>Curva de Ganho Acumulativo: Em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes encontramos 79% dos clientes que estão em churn.</li>
+													<li>Curva de Lift: Em uma uma lista ordenada, segundo as marcações do nosso modelo, essa lista é quase 1.6 vezes melhor que um lista ordenada de forma aleatória.</li>
+												</p>
+
+												<p>
+													Para o modelo de Parcelados obtivemos:
+													<li>AUC: 91.9%</li>
+													<li>Precisão: 89.5%</li>
+													<li>Recall: 82.1%</li>
+													<li>Curva de Ganho Acumulativo: Em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes encontramos 84% dos clientes que estão em churn.</li>
+													<li>Curva de Lift: Em uma uma lista ordenada, segundo as marcações do nosso modelo, essa lista é quase 1.75 vezes melhor que um lista ordenada de forma aleatória.</li>
+												</p>
+
+												<p>
+													Para o modelo de Domicílios obtivemos:
+													<li>AUC: 85.1%</li>
+													<li>Precisão: 77.8%</li>
+													<li>Recall: 81.9</li>
+													<li>Curva de Ganho Acumulativo: Em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes encontramos 75% dos clientes que estão em churn.</li>
+													<li>Curva de Lift: Em uma uma lista ordenada, segundo as marcações do nosso modelo, essa lista é quase 1.5 vezes melhor que um lista ordenada de forma aleatória.</li>
+												</p>
+
+												<p>
+													Para o modelo de Adquirência/Maquininha de Cartão obtivemos:
+													<li>AUC: 82.7%</li>
+													<li>Precisão: 74.6%</li>
+													<li>Recall: 80.9</li>
+													<li>Curva de Ganho Acumulativo: Em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes encontramos 72% dos clientes que estão em churn.</li>
+													<li>Curva de Lift: Em uma uma lista ordenada, segundo as marcações do nosso modelo, essa lista é quase 1.5 vezes melhor que um lista ordenada de forma aleatória.</li>
+												</p>
+
+												<p>
+													Como produto final, será entregue ao time comercial apenas os clientes que possuem uma alta probabilidade de aceitar todos esses produtos. Para verificar se o motor de prospecção 
+													é, de fato, estatisticamente efetivo, realizaremos um teste A/B. Quando obtivermos os resultados, atualizaremos.
+												</p>
+												<p>
+													<b>Ferramentas utilizadas:</b> SAS Viya, SAS Visual Analytics, Python e AWS S3.
+												</p>
+
 											<!-- Conteúdo sobre modelos de churn PF-->
 											<h3 id="content">Modelos de Churn PF - Inadimplência, Evasão Voluntária e Evasão Gradual</h3>
 											
@@ -175,7 +253,7 @@
 												</p>
 
 												<p>
-													No nosso caso, não é diferente. Assim, foi identificado um alto volume de churn nessas três frentes mencionadas. Sendo assim,
+													No nosso caso, não é diferente. Foi identificado um alto volume de churn nessas três frentes mencionadas. Sendo assim,
 													o nosso problema de negócio é identificar, de forma antecipada, os clientes com maior probabilidade de inadimplência ou churn voluntário.
 													Como proposta de solução, foram sugeridos e desenvolvidos dois modelos preditivos para identificar os clientes com maior probabilidade
 													de churn no próximo mês, de modo que os tomadores de decisão tenham um mês completo para atuar sobre esses clientes,
@@ -184,24 +262,28 @@
 
 												<p>
 													Para o caso de inadimplência, utilizamos uma Decision Tree com as seguintes performances:
-													<li>AUC: 89%</li>
-													<li>Precisão: 82%</li>
-													<li>Recall: 85%</li>
-													<li>Curva de ganho: em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes estão 75% dos clientes identificados como risco de churn.</li>
+													<li>AUC: 87.2%</li>
+													<li>Precisão: 84.1%</li>
+													<li>Recall: 91.8%</li>
+													<li>Curva de Ganho Acumulativo: Em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes encontramos 85% dos clientes que estão em churn.</li>
+													<li>Curva de Lift: Em uma uma lista ordenada, segundo as marcações do nosso modelo, essa lista é quase 1.8 vezes melhor que um lista ordenada de forma aleatória.</li>
 												</p>
 
 												<p>
 													Para o caso da evasão voluntária, utilizamos uma Regressão Logística com as seguintes performances:
-													<li>AUC: 85%</li>
-													<li>Precisão: 87%</li>
-													<li>Recall: 79%</li>
-													<li>Curva de ganho: em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes estão 81% dos clientes identificados como risco de churn.</li>
+													<li>AUC: 85.1%</li>
+													<li>Precisão: 89.9%</li>
+													<li>Recall: 79.5%</li>
+													<li>Curva de Ganho Acumulativo: Em uma lista ordenada segundo as marcações do modelo, nos primeiros 50% dos clientes encontramos 82% dos clientes que estão em churn.</li>
+													<li>Curva de Lift: Em uma uma lista ordenada, segundo as marcações do nosso modelo, essa lista é quase 1.7 vezes melhor que um lista ordenada de forma aleatória.</li>
 												</p>
 
 												<p>
-													Para que as ações sejam tomadas de forma mais efetiva e ágil, propus a construção de um dashboard atualizado mensalmente de forma automatizada,
-													diretamente integrado aos modelos de churn, com filtros interativos para que o tomador de decisão possa investigar e elaborar planos de ação
-													conforme os grupos e seus respectivos níveis de risco. Além disso, construímos 5 categorias de risco para facilitar a gestão. As categorias foram definidas da seguinte forma:
+													Com modelos bem calibrados e com thresholds tunados e estáveis, verificados por meio de cross-validation, toda a inteligência de dados gerada por esses modelos pôde ser consumida 
+													adequadamente. Desenvolvi um dashboard atualizado mensalmente, de forma automatizada, diretamente integrado aos modelos de churn, com filtros interativos para que o tomador de 
+													decisão possa investigar, elaborar e executar planos de ação de retenção e mitigação de churn. Para uma melhor gestão dos grupos de risco de churn, construímos cinco categorias de 
+													risco para facilitar o monitoramento e a tomada de decisão. São eles:
+
 													<li>Risco Altíssimo: probabilidade acima de 80% de churn.</li>
 													<li>Risco Alto: probabilidade entre 80% e 60% de churn.</li>
 													<li>Risco Moderado: probabilidade entre 59% e 40% de churn.</li>
@@ -210,13 +292,19 @@
 												</p>
 
 												<p>
-													<b>Ferramentas utilizadas:</b> SAS Viya, SAS Visual Analytics, Python e AWS S3.
+													Para o caso da evasão gradual, com regras bem definidas, não houve a necessidade de um modelo estatístico. Todavia, construímos KPI's e alertas de acompanhamento para as devidas ações
+													e atuaçãoes em clientes, cujas, atividades estavam se deteriorando.
 												</p>
 
 												<p>
-													<b>Observação:</b> Este projeto ainda está em desenvolvimento. Para sua finalização, falta a construção do modelo de churn voltado ao churn silencioso.
-													Conforme o projeto avançar, atualizarei por aqui.
+													Como produto final, construí um painel para acompanhar os KPI's da Inadimplência e das Evasões mencionandas e, para além disso, com objetivo de operacionalizar o painel, criamos uma seção em que
+													pode-se extrair o analítico para realizar as ações.
 												</p>
+
+												<p>
+													<b>Ferramentas utilizadas:</b> SAS Viya, SAS Visual Analytics, Python e AWS S3.
+												</p>
+
 
 
 
@@ -399,6 +487,33 @@
 													<li><a href="https://rossmann-faturamento.streamlit.app/" class="button">Dashboard - Produto Final</a></li>
 												</ul>
 											</article>
+
+											<!-- Probabilidade de aceitar contrato de depósito bancário à prazo -->
+											<article>
+
+												<a href="https://github.com/jefferson-datascience/Previsao-Vendas-Rossmann" class="image"><img src="images/marketing-bancario.jpg" alt="" /></a>
+												<h3>Inteligência de Dados para Marketing: Ações Estratégicas para o produto 'Depósito Bancário à Prazo'.</h3>
+												
+												<p>
+													O objetivo deste projeto é desenhar de ponta a ponta uma solução em que os tomadores de decisões possam ter informações sobre quais variáveis mais interferem
+													na aceitação de um depósito bancário, quais são os grupos naturais que existem e, além disso, qual a melhor estratégia para aplicar nesses grupos e, por fim, qual
+													a probabilidade desses clientes aceitaram o depósito bancário à prazo.
+												</p>
+													<h4>Ferramentas e Bibliotecas Utilizadas</h4>
+														<ul>
+															<li>Python, Pandas, Numpy.</li>
+															<li>Seaborn.</li>
+															<li>Git, Github.</li>
+															<li>Modelagem Preditiva - Classsificação</li>
+															<li>Modelagem de Agrupamento - Clusterização</li>
+															<li>Streamlit Cloud e Streamlit</li>
+														</ul>
+												<ul class="actions">
+													<li><a href="https://github.com/jefferson-datascience/PrevisaoAceitarContratoBanco" class="button">Saiba Mais</a></li>
+													<li><a href="https://ucibank-marketing-depositos.streamlit.app/" class="button">Painel da Solução</a></li>
+												</ul>
+											</article>
+
 
 										</div>
 
